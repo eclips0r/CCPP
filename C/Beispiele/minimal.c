@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/*nimmt ein Array in der Kommandozeile als Argumente und printet die Zahl, sowie das dazugehoerige Argument aus*/
+/*takes inputs from terminal arguments and prints the corresponding number with the position of the argument
+(.exe name is included within arguments so length is at least 1)*/
 int main(int argc, char *argv[])
 {
     int i;
