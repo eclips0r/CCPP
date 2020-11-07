@@ -1,0 +1,7 @@
+#works with gcc compiler
+default: cmult
+
+#cmult -> .exe name
+#.c files -> files neccessary to compile cmult
+cmult: cmult.c complex.c
+	gcc -o cmult cmult.c complex.c
