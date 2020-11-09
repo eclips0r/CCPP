@@ -1,0 +1,13 @@
+OBJECTS=complex.o
+PROGRAMS=cmult
+
+default: $(PROGRAMS)
+
+%.o: %.c
+	$(CC) -O3 -c $<
+
+cmult: cmult.o $(OBJECTS)
+	$(CC) $(LFLAGS) -o $@ $^
+
+clean:
+	-rm -f $(OBJECTS) $(PROGRAMS)

@@ -1,0 +1,10 @@
+CFLAGS=-03
+CC=C:\MinGW\bin\gcc
+#windows path
+
+default: cmult
+
+cmult: cmult.c complex.c
+
+clean:
+	-rm -f *.o cmult

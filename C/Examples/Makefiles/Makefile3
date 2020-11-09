@@ -1,0 +1,10 @@
+CFLAGS=-03
+
+PROGRAMS=cmult
+
+default: $(PROGRAMS)
+
+cmult: cmult.o complex.o
+
+clean:
+	-rm -f *.o $(PROGRAMS)
